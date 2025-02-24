@@ -1,0 +1,132 @@
+body{
+    text-align: center;
+    
+    justify-content: center;
+}
+
+.parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerbox{
+   
+   border: 1px solid transparent;
+   margin-left: 100px;
+   margin-right: 100px;
+   margin-top: 100px;
+   padding: 20px;
+   gap: 10px;
+   padding-left: 100px;
+ 
+  
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boxProduct{
+    border: 2px solid grey;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    padding-bottom: 20px;
+    
+}
+
+img{
+border: 3px black;
+
+}
+
+header{
+    background-color: rgb(245, 241, 241);
+    padding: 20px;
+    display: block;
+    text-align: center;
+
+}
+
+h1{
+ 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
+}
+
+a{
+    color: black;
+    font-weight: normal;
+    text-decoration: none;
+    border: 2px solid grey;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(165, 163, 163);
+    transition: 0.3s all;
+    
+}
+
+a:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+
+}
+
+.namingOfProduct{
+    font-family: candara;
+    font-style: normal;
+    
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 768px) {
+    .containerbox {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 50px;
+        padding: 15px;
+        gap: 5px;
+    }
+
+    .boxProduct {
+        margin: 10px;
+        padding: 5px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    a {
+        padding: 3px;
+        margin: 1px;
+    }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 480px) {
+    .containerbox {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        padding: 10px;
+        gap: 5px;
+    }
+
+    .boxProduct {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    a {
+        padding: 2px;
+        margin: 1px;
+    }
+}
